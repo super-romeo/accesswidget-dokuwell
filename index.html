@@ -16,6 +16,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="description" content="For website owners: an accessibility panel for visitors — text size, contrast, fonts, motion — and a monthly check of your pages with fixes.">
 <link rel="icon" href="favicon.svg">
 <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="variant.css">
 <script src="smoke.js" defer></script>
 <!-- faq-jsonld:start -->
 <script type="application/ld+json">
@@ -75,38 +79,68 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 <!-- Google Tag Manager (noscript): по заказу «Смоков» (СМ-09) -->
 
-<header><div class="wrap">
-  <div class="logo"><a href="index.html" data-ev="click_logo_home">Access Panel</a></div>
-  <nav class="top"><a href="#what" data-ev="click_nav_what">What you get</a><a href="price.html" data-ev="click_nav_price">Price</a><a href="#example" data-ev="click_nav_example">Example</a><a href="#start" data-ev="click_nav_start">Start</a></nav>
+<header><div class="shell">
+  <a class="home" href="index.html" data-ev="click_logo_home">Access Panel</a>
+  <nav><a href="#what" data-ev="click_nav_what">What you get</a><a href="price.html" data-ev="click_nav_price">Price</a><a href="#example" data-ev="click_nav_example">Example</a><a href="#start" data-ev="click_nav_start">Start</a></nav>
 </div></header>
 
-<div class="wrap">
-  <div class="hero">
-    <h1>An accessibility panel for your visitors — and a monthly list of what to fix on your pages</h1>
-    <p class="sub">For website owners: add one line of code to give visitors an accessibility panel with text size, contrast, readable fonts, link highlighting and reduced motion, and get a monthly check of your pages with clear issues to fix in your site itself.</p>
-    <a class="cta" href="price.html" data-ev="cta_click">I need this</a>
-    <p class="cta-note">Early access · No payment is taken on this page yet</p>
-  </div>
+<main class="shell">
+  <section class="split">
+    <div class="stack">
+      <p class="meta rise"><span class="dot"></span> For website owners</p>
+      <h1 class="rise" style="--i:1" data-len="long">An accessibility panel for your visitors&nbsp;<span class="soft">— and a monthly list of what to fix on your pages</span></h1>
+      <p class="rise" style="--i:2">For website owners: add one line of code to give visitors an accessibility panel with text size, contrast, readable fonts, link highlighting and reduced motion, and get a monthly check of your pages with clear issues to fix in your site itself.</p>
+      <a class="button rise" style="--i:3" href="price.html" data-ev="cta_click">I need this</a>
+      <p class="meta rise" style="--i:4">Early access · No payment is taken on this page yet</p>
+    </div>
+    <figure class="window rise" style="--i:2"><svg aria-hidden="true" focusable="false" class="shot" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="#eef2f7" /><rect x="80" y="80" width="1040" height="640" rx="24" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="130" y="165" font-size="40" font-weight="600" fill="#0a1524">Visitor panel</text><line x1="130" y1="210" x2="1070" y2="210" stroke="#dde2ea" stroke-width="3" fill="none" /><rect x="130" y="270" width="420" height="70" rx="16" fill="#dfe8f7" /><rect x="160" y="294" width="220" height="24" rx="10" fill="#ffffff" /><rect x="130" y="370" width="420" height="70" rx="16" fill="#ffffff" stroke="#dde2ea" stroke-width="2" /><rect x="160" y="394" width="180" height="24" rx="10" fill="#dde2ea" /><rect x="130" y="470" width="420" height="70" rx="16" fill="#ffffff" stroke="#dde2ea" stroke-width="2" /><rect x="160" y="494" width="260" height="24" rx="10" fill="#b9c3d2" /><rect x="680" y="270" width="380" height="380" rx="20" fill="#dfe8f7" /><text x="720" y="340" font-size="32" font-weight="600" fill="#0a1524">monthly check</text><rect x="720" y="390" width="300" height="28" rx="10" fill="#ffffff" /><rect x="720" y="440" width="250" height="28" rx="10" fill="#12397a" /><rect x="720" y="490" width="280" height="28" rx="10" fill="#ffffff" /><rect x="720" y="540" width="200" height="28" rx="10" fill="#b9c3d2" /></svg></figure>
+    <dl class="facts">
+      <div><dt>For</dt><dd>Website owners</dd></div>
+      <div><dt>Panel</dt><dd>Accessibility panel</dd></div>
+      <div><dt>How</dt><dd>One line of code</dd></div>
+      <div><dt>Access</dt><dd>Early access</dd></div>
+    </dl>
+  </section>
 
   <section id="what" data-view="features_view">
-    <h2>What you get</h2>
-    <div class="grid">
-      <div class="card"><b>Visitor panel</b><span>Text size, contrast, readable font, spacing, link highlighting, cursor and reduced motion.</span><br><a class="btn" href="price.html" data-ev="feature_panel">I need this</a></div>
-      <div class="card"><b>Monthly page check</b><span>Your pages checked each month for missing alt text, low contrast, empty links, form labels and headings.</span><br><a class="btn" href="price.html" data-ev="feature_check">I need this</a></div>
-      <div class="card"><b>Issues to fix</b><span>Each issue with the page, the element and a plain explanation of how to fix it in your site.</span><br><a class="btn" href="price.html" data-ev="feature_fixes">I need this</a></div>
-      <div class="card"><b>Accessibility statement</b><span>A template statement for your site describing what you do and how visitors can report problems.</span><br><a class="btn" href="price.html" data-ev="feature_statement">I need this</a></div>
+    <div class="stack"><h2>What you get</h2></div>
+    <div class="bento">
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="80" y="70" width="640" height="460" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="120" y="150" font-size="36" font-weight="600" fill="#0a1524">Visitor panel</text><rect x="120" y="210" width="520" height="64" rx="18" fill="#12397a" /><rect x="150" y="232" width="200" height="22" rx="8" fill="#ffffff" /><rect x="120" y="300" width="520" height="64" rx="18" fill="#dfe8f7" /><rect x="150" y="322" width="240" height="22" rx="8" fill="#ffffff" /><rect x="120" y="390" width="520" height="64" rx="18" fill="#dde2ea" /><rect x="150" y="412" width="160" height="22" rx="8" fill="#ffffff" /></svg></div>
+        <h3>Visitor panel</h3><p>Text size, contrast, readable font, spacing, link highlighting, cursor and reduced motion.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_panel">I need this</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="80" y="70" width="640" height="460" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="120" y="150" font-size="34" font-weight="600" fill="#0a1524">Monthly page check</text><rect x="120" y="220" width="64" height="64" rx="10" fill="#12397a" /><rect x="210" y="240" width="400" height="24" rx="10" fill="#dde2ea" /><rect x="120" y="320" width="64" height="64" rx="10" fill="#dfe8f7" stroke="#dde2ea" stroke-width="2" /><rect x="210" y="340" width="340" height="24" rx="10" fill="#b9c3d2" /><rect x="120" y="420" width="64" height="64" rx="10" fill="#dde2ea" /><rect x="210" y="440" width="280" height="24" rx="10" fill="#dde2ea" /></svg></div>
+        <h3>Monthly page check</h3><p>Your pages checked each month for missing alt text, low contrast, empty links, form labels and headings.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_check">I need this</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="150" y="70" width="500" height="460" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="190" y="145" font-size="36" font-weight="600" fill="#0a1524">Issues to fix</text><rect x="190" y="190" width="380" height="22" rx="8" fill="#dde2ea" /><rect x="190" y="236" width="320" height="22" rx="8" fill="#b9c3d2" /><rect x="190" y="282" width="400" height="22" rx="8" fill="#dde2ea" /><rect x="190" y="328" width="260" height="22" rx="8" fill="#dde2ea" /><circle cx="500" cy="440" r="52" fill="#dfe8f7" stroke="#12397a" stroke-width="4" /><polyline points="472,440 492,462 532,404" fill="none" stroke="#12397a" stroke-width="6" /></svg></div>
+        <h3>Issues to fix</h3><p>Each issue with the page, the element and a plain explanation of how to fix it in your site.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_fixes">I need this</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="160" y="60" width="480" height="480" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="200" y="140" font-size="30" font-weight="600" fill="#0a1524">Accessibility statement</text><rect x="200" y="180" width="360" height="20" rx="8" fill="#12397a" /><rect x="200" y="230" width="390" height="18" rx="8" fill="#dde2ea" /><rect x="200" y="270" width="340" height="18" rx="8" fill="#b9c3d2" /><rect x="200" y="310" width="370" height="18" rx="8" fill="#dde2ea" /><rect x="200" y="350" width="300" height="18" rx="8" fill="#dde2ea" /><rect x="200" y="410" width="220" height="50" rx="14" fill="#dfe8f7" /></svg></div>
+        <h3>Accessibility statement</h3><p>A template statement for your site describing what you do and how visitors can report problems.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_statement">I need this</a>
+      </article>
     </div>
   </section>
 
-  <section id="example" data-view="example_view">
-    <h2>Example (fictional data)</h2>
-    <p class="fine">Online store with 80 pages. The panel is added in five minutes. The first check finds 64 images without alt text, low contrast on the footer links and 3 forms without labels. The developer fixes the forms and contrast in a week; the next check shows only product images left.</p>
-    <a class="cta" href="price.html" data-ev="click_cta_after_example">Choose your plan</a>
+  <section id="example" data-view="example_view" class="split flip">
+    <div class="stack">
+      <h2>Example</h2>
+      <p>Online store with 80 pages. The panel is added in five minutes. The first check finds 64 images without alt text, low contrast on the footer links and 3 forms without labels. The developer fixes the forms and contrast in a week; the next check shows only product images left.</p>
+    <a class="button" href="price.html" data-ev="click_cta_after_example">Choose your plan</a>
+    </div>
+<svg aria-hidden="true" focusable="false" class="shot reveal" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="#eef2f7" /><line x1="240" y1="150" x2="960" y2="150" stroke="#dde2ea" stroke-width="6" fill="none" /><circle cx="240" cy="150" r="22" fill="#ffffff" stroke="#12397a" stroke-width="6" /><circle cx="600" cy="150" r="22" fill="#ffffff" stroke="#12397a" stroke-width="6" /><circle cx="960" cy="150" r="22" fill="#12397a" /><text x="240" y="230" font-size="32" font-weight="600" fill="#0a1524" text-anchor="middle">five minutes</text><text x="600" y="230" font-size="32" font-weight="600" fill="#0a1524" text-anchor="middle">low contrast</text><text x="960" y="230" font-size="32" font-weight="600" fill="#0a1524" text-anchor="middle">without labels</text><rect x="140" y="320" width="920" height="380" rx="24" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="190" y="410" font-size="36" font-weight="600" fill="#0a1524">without alt text</text><rect x="190" y="480" width="80" height="80" rx="12" fill="#12397a" /><rect x="300" y="480" width="80" height="80" rx="12" fill="#dde2ea" /><rect x="410" y="480" width="80" height="80" rx="12" fill="#b9c3d2" /><rect x="520" y="480" width="80" height="80" rx="12" fill="#dfe8f7" stroke="#dde2ea" stroke-width="2" /></svg>
   </section>
 <!-- seo-tekst:start -->
-  <section id="opis">
-    <h2>How it works</h2>
-    <p>Many visitors need small adjustments to use a website comfortably: larger text, stronger contrast, a more readable font, highlighted links, or less motion on the screen. At the same time, site owners are increasingly expected to make their sites accessible, and many do not know where their pages fall short.</p>
+  <section id="opis" class="split flip">
+    <div class="stack"><h2>How it works</h2></div>
+    <div class="stack">
+      <p>Many visitors need small adjustments to use a website comfortably: larger text, stronger contrast, a more readable font, highlighted links, or less motion on the screen. At the same time, site owners are increasingly expected to make their sites accessible, and many do not know where their pages fall short.</p>
     <p>Access Panel gives you two things. First, a panel your visitors can open on any page to adjust the site to their needs. Second, a monthly check of your pages that shows what to fix in the site itself. The panel helps visitors today; the fixes make the site better for everyone, including people using screen readers, which a panel alone cannot fully help.</p>
     <p>You add one line of code to your site or install the plugin for your platform. Visitors see a small button; the panel lets them change text size and spacing, switch to high contrast or a readable font, highlight links and headings, enlarge the cursor and stop animations. Their choices are remembered on their device.</p>
     <p>Every month the service checks your pages for common issues: images without alternative text, text with low contrast, links and buttons without a name, form fields without labels, missing or skipped headings, and pages without a language set. Each issue is listed with the page, the element and a plain explanation of how to fix it.</p>
@@ -115,31 +149,34 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <p>Plans are priced by the size of your site, by monthly page views, so a small blog and a larger store each pay for what they use.</p>
     <p>A typical first month looks like this. You install the panel and run the first check. The list shows the most common issues across your pages, sorted by how many pages they affect. Your developer fixes the issues that repeat on every page first, such as low contrast in the header or a form without labels, and the next check shows the list getting shorter.</p>
     <p>A widget does not make a website compliant with any law or standard by itself, and we do not claim it does. Accessibility depends on how your site is built; the monthly check helps you find and fix the issues.</p>
+    </div>
   </section>
   <section id="faq">
-    <h2>Questions</h2>
-    <h3>Will the widget make my site compliant?</h3>
-    <p>No widget can do that alone. The panel helps visitors, and the monthly check helps you fix issues in the site itself.</p>
-    <h3>How do I install it?</h3>
-    <p>With one line of code or a plugin for your platform.</p>
-    <h3>What does the monthly check look for?</h3>
-    <p>Missing alt text, low contrast, unnamed links and buttons, unlabeled form fields, heading structure and page language.</p>
-    <h3>Does the panel slow down my site?</h3>
-    <p>The panel loads after the page, so it does not delay the content.</p>
-    <h3>Can I use it already?</h3>
-    <p>Not yet. The service is in preparation, and we are checking whether site owners need it.</p>
+    <div class="stack"><h2>Questions</h2></div>
+    <div class="rows">
+      <div class="split flip"><h3>Will the widget make my site compliant?</h3><p>No widget can do that alone. The panel helps visitors, and the monthly check helps you fix issues in the site itself.</p></div>
+      <div class="split flip"><h3>How do I install it?</h3><p>With one line of code or a plugin for your platform.</p></div>
+      <div class="split flip"><h3>What does the monthly check look for?</h3><p>Missing alt text, low contrast, unnamed links and buttons, unlabeled form fields, heading structure and page language.</p></div>
+      <div class="split flip"><h3>Does the panel slow down my site?</h3><p>The panel loads after the page, so it does not delay the content.</p></div>
+      <div class="split flip"><h3>Can I use it already?</h3><p>Not yet. The service is in preparation, and we are checking whether site owners need it.</p></div>
+    </div>
   </section>
 <!-- seo-tekst:end -->
-  <section id="start" data-view="start_view">
-    <h2>Add your website</h2>
-    <p><label>Monthly page views of your site<br><select data-ev-focus="form_start" style="margin-top:6px;padding:8px;font-size:16px"><option value="">— please choose —</option><option>Up to 10,000</option><option>10,000–100,000</option><option>100,000–1 million</option><option>More than 1 million</option></select></label></p>
-    <a class="cta" href="price.html" data-ev="form_submit_click">Add a website</a>
+  <section id="start" data-view="start_view" class="split">
+    <div class="stack">
+      <h2>Add your website</h2>
+    </div>
+    <div class="tile stack">
+      <label>Monthly page views of your site<select data-ev-focus="form_start"><option value="">— please choose —</option><option>Up to 10,000</option><option>10,000–100,000</option><option>100,000–1 million</option><option>More than 1 million</option></select></label>
+      <a class="button" href="price.html" data-ev="form_submit_click">Add a website</a>
+    </div>
   </section>
-</div>
+</main>
 
-<footer><div class="wrap">
+<footer><div class="shell">
+  <p><b>Access Panel</b></p>
   <p><a href="privacy.html" data-ev="click_legal_privacy">Privacy</a></p>
-  <p class="muted">A widget alone does not make a website compliant with any law or standard; we make no such claim. Accessibility depends on how your site is built.</p>
+  <p>A widget alone does not make a website compliant with any law or standard; we make no such claim. Accessibility depends on how your site is built.</p>
 </div></footer>
 
 </body>
